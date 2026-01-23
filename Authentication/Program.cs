@@ -5,6 +5,7 @@ using Authentication.Models.Dtos;
 using Authentication.Services;
 using Authentication.Services.IAuthService;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Authentication
 {
@@ -13,6 +14,11 @@ namespace Authentication
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddDbContext<AppDbContext>(option =>
+            {
+                option.UseMySQL(builder.Configuration.GetConnectionString("MySql"));
+            });
 
             builder.Services.AddDbContext<AppDbContext>();
             builder.Services.AddScoped<IAuth, AuthService>();

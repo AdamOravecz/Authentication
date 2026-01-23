@@ -8,12 +8,8 @@ namespace Authentication.Datas
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
-
+            Database.EnsureCreated();
         }
         public virtual DbSet<ApplicationUser> ApplicationUsers { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseMySQL("server=localhost;database=auth;user=root;password=");
-        }
     }
 }
