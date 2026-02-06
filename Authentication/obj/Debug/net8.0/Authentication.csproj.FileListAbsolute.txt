@@ -141,3 +141,4 @@ C:\Users\orave\source\repos\WepApi\RoleBasedAuthentication\Authentication\obj\De
 C:\Users\orave\source\repos\WepApi\RoleBasedAuthentication\Authentication\obj\Debug\net8.0\Authentication.pdb
 C:\Users\orave\source\repos\WepApi\RoleBasedAuthentication\Authentication\obj\Debug\net8.0\Authentication.genruntimeconfig.cache
 C:\Users\orave\source\repos\WepApi\RoleBasedAuthentication\Authentication\obj\Debug\net8.0\ref\Authentication.dll
+C:\Users\orave\source\repos\WepApi\RoleBasedAuthentication\Authentication\obj\Debug\net8.0\Authentication.sourcelink.json
